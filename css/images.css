@@ -1,0 +1,16 @@
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+section {
+}
+
+.main-image {
+    width: 100%;   
+}
+
+.header-image-section {
+    background: transparent url("../img/mars-pano.jpg") no-repeat center top;
+    background-size: cover;
+}
