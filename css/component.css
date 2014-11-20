@@ -85,6 +85,74 @@
 
 /* Example media queries */
 
+@media screen and (max-width: 860px){
+    
+    .cbp-spmenu a {
+        font-size: 1.3em;
+        font-weight: 200;
+    }
+
+    .cbp-spmenu-vertical a {
+        padding: 1.3em;
+        text-align: center;
+    }
+    
+    .cbp-spmenu h3 {
+        font-size: 1em;
+        font-weight: 200;
+    }
+    
+    .cbp-spmenu-vertical {
+        width: 300px;
+    }
+     .cbp-spmenu-left {
+        left: -300px;
+    }
+
+    .cbp-spmenu-push-toright {
+        left: 300px;
+    }
+
+    .cbp-spmenu-push-toleft {
+        left: -300px;
+    }
+
+}
+
+@media screen and (max-width: 580px){
+    
+    .cbp-spmenu a {
+        font-size: 1em;
+        font-weight: 100;
+    }
+
+    .cbp-spmenu-vertical a {
+        padding: 1em;
+        text-align: left;
+    }
+    
+    .cbp-spmenu h3 {
+        font-size: 1em;
+        font-weight: 100;
+    }
+        
+    .cbp-spmenu-vertical {
+        width: 200px;
+    }
+     .cbp-spmenu-left {
+        left: -200px;
+    }
+
+    .cbp-spmenu-push-toright {
+        left: 200px;
+    }
+
+    .cbp-spmenu-push-toleft {
+        left: -200px;
+    }
+
+}
+
 @media screen and (max-width: 55.1875em){
 
 	.cbp-spmenu-horizontal {
