@@ -1,87 +1,22 @@
-/* General Demo Style */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-
-@font-face {
-	font-family: 'fontawesome';
-	src:url('../fonts/fontawesome.eot');
-	src:url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/fontawesome.svg#fontawesome') format('svg'),
-		url('../fonts/fontawesome.woff') format('woff'),
-		url('../fonts/fontawesome.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
 
 body, html { font-size: 100%; 	padding: 0; margin: 0;}
 
-/* Reset */
-*,
-*:after,
-*:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before,
-.clearfix:after {
-	content: " ";
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #000;
-
 }
-
-a {
-	color: #000;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #000;
-}
-
 
 .main > section {
 	max-width: 90px;
 	width: 90%;
-	margin: 0 auto;
-}
-
-.main > section h2 {
-	font-weight: 300;
 }
 
 .main > section button {
 	border: none;
-    background: #fff;
-	width: 50%;
-	margin: 10px 0;
-	font-size: 0.8em;
+    background: none;
+	width: 50px;
+	margin: 20px;
     float: left;
-}
-
-.main > section button:hover {
-	color: none;	
-}
-
-.main > section button.active {
-    color: none;
-}
-
-.main > section button.disabled {
-	pointer-events: none;
-    color: none;
-}
-
-.container > header nav a:hover:before {
-	color: none;
+    position: absolute;
 }

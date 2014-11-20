@@ -4,13 +4,17 @@ img {
 }
 
 section {
+	
 }
 
 .main-image {
-    width: 100%;   
+    width: 20%; 
 }
 
 .header-image-section {
-    background: transparent url("../img/mars-pano.jpg") no-repeat center top;
+    background: transparent url("../images/bg-image.jpg") no-repeat center top;
     background-size: cover;
+    width: 100%;
+    padding: 16.4rem 0;
 }
+
