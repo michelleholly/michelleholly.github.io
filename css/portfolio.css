@@ -1,0 +1,59 @@
+.color {
+    background-color: #17847C
+
+}
+
+.burger-pt1-image-section {
+    background: transparent url("../images/burger-pt11.png") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 25rem;
+}
+
+.burger-pt2-image-section {
+    background: transparent url("../images/burger-pt22.png") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 20rem;
+}
+
+.burger-pt3-image-section {
+    background: transparent url("../images/burger-pt33.png") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 30rem;
+}
+
+.burger-pt4-image-section {
+    background: transparent url("../images/burger-pt44.png") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    padding: 30rem;
+}
+
+.burger-pt5-image-section {
+    background: transparent url("../images/burger-pt55.png") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 30rem;
+}
+
+.burger-pt6-image-section {
+    background: transparent url("../images/burger-pt66.png") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 20rem;
+}
+
+.burger-video-section {
+    background-size: cover;
+    background-color: #17847C;
+    width: 100%;
+    height: 100%;
+    padding: 10rem 30rem;
+}
