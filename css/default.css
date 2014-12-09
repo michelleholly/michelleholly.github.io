@@ -12,6 +12,11 @@ body {
     color: #000;
 }
 
+h1 {
+    color: #84A2A7;
+    padding: 1rem;
+}
+
 h2 {
     color: #84A2A7;
     font-size: 10rem;
@@ -20,11 +25,6 @@ h2 {
 p {
     color: #84A2A7;
 }
-
-section {
-  
-}
-
 
 .main > section {
     position: absolute;
@@ -42,6 +42,14 @@ section {
     position: absolute;
 }
 
+.logo-side {
+    margin: 1rem;
+    float: right;
+    max-width: 100px;
+    background: none;
+    position: relative;
+
+}
 
 .flex-img {
     width: 100%;

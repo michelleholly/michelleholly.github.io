@@ -23,85 +23,20 @@
 			<a href="#contact">CONTACT</a>
 		</nav>
 	
-			<div class="main">
-                
-				<section class="buttonset">
-					<button id="showLeftPush"><img src="images/toggle-nav-button.svg"></button>
-				</section>
-			</div>
+        <div class="main">
+            <section class="buttonset">
+                <button id="showLeftPush"><img src="images/toggle-nav-button.svg"></button>
+            </section>
+        </div>
 
 <!-- Main Header Image ------------------------------------------------------------->        
     
 		<section class="header-image-section">
-        <img class="main-image" src="images/michelle-logo.svg" alt="logo">
+            <img class="main-image" src="images/michelle-logo.svg" alt="logo">
         </section>
         
 <!-- Portfolio Grid ----------------------------------------------------------------------->
         
-<!--
-            
-        <table class="table unit unit-xs-1 unit-s-1 unit-m-1-2" id="work">
--->
-            <!-- First row --> 
-<!--
-        <tr>
-            <td colspan="2" rowspan="2"> 
-                <a href="burger.html">
-                    <img class="flex-img unit unit-xs-1 unit-s-1 unit-m-1-2" src="images/burger-thumb.png" alt="">
-                </a>
-            </td>
-            <td colspan="2">
-                <a href>
-                    <img class="flex-img unit unit-xs-1 unit-s-1 unit-m-1-2" src="http://placehold.it/1000x200/" alt="">
-                </a>
-            </td>
-        </tr>
-
-            <!-- Second row -->
-<!--
-        <tr>
-            <td rowspan="2">
-                <a href>
-                    <img class="flex-img unit unit-xs-1 unit-s-1 unit-m-1-2" src="http://placehold.it/1000x800/" alt="">
-                </a>
-            </td>
-            <td rowspan="2">
-                <a href>
-                    <img class="flex-img unit unit-xs-1 unit-s-1 unit-m-1-2" src="http://placehold.it/1000x800/" alt="">
-                </a>
-            </td>
-
-        </tr>
-
-            <!-- Third row -->
-<!--
-        <tr>
-            <td colspan="2">
-                <a href>
-                    <img class="flex-img unit unit-xs-1 unit-s-1 unit-m-1-2" src="http://placehold.it/1000x400/" alt="">
-                </a>
-            </td>
-
-        </tr>
-
-            <!-- Fourth row -->
-<!--
-        <tr>
-            <td colspan="2">
-                <a href>
-                    <img class="flex-img unit unit-xs-1 unit-s-1 unit-m-1-2" src="http://placehold.it/1000x800/" alt="">
-                </a>
-            </td>
-            <td colspan="2">
-                <a href>
-                    <img class="flex-img unit unit-xs-1 unit-s-1 unit-m-1-2" src="http://placehold.it/1000x400/" alt="">
-                </a>
-            </td>
-        </tr>
-
-            </table>
-
--->
 
         <section class="grid" id="work">
             <a href="torso.html" class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
@@ -135,18 +70,19 @@
                 <img class="flex-img" src="images/me.jpg" alt="image of michelle">
             </div>
             <div class="spacing unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+                <h1>Hey! I'm Michelle Holly Dugas</h1>
                 <p>This is always the awkward part. I swear I’m better at this when I’m having a beer and drooling over incredible motion, or even play a game of pool, while getting really deep into a conversation about the Univers letterforms. As great as doing those things with you would be, let’s stick to the formal paragraph. I’m an Ottawa based Graphic Designer. I hold most of my passions for design in motion and typography. I’ve lived in Ottawa, Ontario for majority of my life. So I know all the best places in Ottawa to get a killer Burrito. I’m currently studying Graphic Design Algonquin College. I have also taken Pre Design and Photography at Algonquin too. I’ve been interested in design since a very young age. I’ve worked hard to make beautiful pieces of design and don’t plan on stopping. So if I sound like the kind of person you could get along with and you dig my work then email me and we can talk design. If email isn’t your thing then please feel free to follow me on behance, twitter, and linkedin.</p>           
             </div>
         </div>  
         
 <!-- Contact -------------------------------------------------------------> 
         <div class="contact" id="contact">
-                <h2>Hey!</h2>
-                <p>I can't wait to hear from you</p>
-                <a class="smedia" href="https://www.behance.net/michellehollydugas">Behance</a>
-                <a class="smedia" href="#">Email</a>
-                <a class="smedia" href="https://www.linkedin.com/pub/michelle-dugas/64/592/266">LinkedIn</a>
-                <a class="smedia" href="https://twitter.com/MichelleDug">Twitter</a>
+            <h2>Hey!</h2>
+            <p>I can't wait to hear from you</p>
+            <a class="smedia" href="https://www.behance.net/michellehollydugas">Behance</a>
+            <a class="smedia" href="mailto:michelle.holly.dugas@gmail.com">Email</a>
+            <a class="smedia" href="https://www.linkedin.com/pub/michelle-dugas/64/592/266">LinkedIn</a>
+            <a class="smedia" href="https://twitter.com/MichelleDug">Twitter</a>
         </div>  
 
         
@@ -179,6 +115,10 @@
 				}
 
 			}
+            
+            $(".cbp-spmenu a").on("click",function(){
+                showLeftPush.click();
+            });
 		</script>
         <script>
             $(function() {
