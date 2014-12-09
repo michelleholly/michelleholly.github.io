@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Michelle Holly Dugas</title>
+    <link href="css/component.css" rel="stylesheet" type="text/css"/>
+    <link href="css/images.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/images.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+	<body class="cbp-spmenu-push">
+
+<!-- Navigation----------------------------------------------------------------------->
+        
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+            <a href="index.html#work">WORK</a>
+			<a href="index.html#about">ABOUT</a>
+			<a href="index.html#contact">CONTACT</a>
+		</nav>
+
+			<div class="main">
+				<section class="buttonset">
+					<button id="showLeftPush"><img src="images/toggle-nav-button.svg"></button>
+				</section>
+			</div>
+   
+        <!--
+        <div>			
+			<section class="si-icons si-icons-default">
+				<span class="si-icon si-icon-hamburger-cross" id="showLeftPush" data-icon-name="hamburgerCross"></span>
+			</section>
+		</div>
+          -->
+
+    
+<!-- Portfolio Piece----------------------------------------------------->
+        <div>
+            <section>
+                <img class="flex-img unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" src="images/red-ladder.png" alt="">
+                
+                <img class="flex-img unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" src="images/red-laddder-logo.jpg" alt="">
+                
+                <img class="flex-img unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" src="images/red-ladder-logo-black.jpg" alt="">
+
+            </section>
+        </div>
+<!-- Footer -------------------------------------------------------------> 
+        <div>
+            <p class="footer">All rights reserved to Michelle Holly Dugas</p>
+        </div>
+          
+<!-- JS for Nav ----------------------------------------------------------------------->
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+		<script src="js/classie.js"></script>
+        <script src="js/toggle-nav.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+			function disableOther( button ) {
+				
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+
+			}
+		</script>
+        <script>
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+        </script>
+        <script>
+			(function() {
+				// initialize all
+				
+				[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
+					var svgicon = new svgIcon( el, svgIconConfig );
+				} );
+
+				new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger-cross' ), svgIconConfig, { easing : mina.elastic, speed: 600 } );
+
+			})();
+		</script>
+        
+<!-- JS for Slider ----------------------------------------------------------------------->
+
+	</body>
+</html>
