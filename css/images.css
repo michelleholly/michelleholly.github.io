@@ -1,6 +1,6 @@
 .main-image {
     display: block;
-    width: 15%; 
+    width: 20%; 
     margin: 0 auto;
 }
 
@@ -11,3 +11,8 @@
     padding: 18rem 0;
 }
 
+@media only screen and (max-width: 60em) {
+    .main-image {
+    width: 30%; 
+    }
+}
