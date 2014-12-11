@@ -43,11 +43,14 @@ p {
 }
 
 .logo-side {
-    margin: 1rem;
+    margin: 15px;
     float: right;
     max-width: 100px;
     background: none;
-    position: relative;
+    overflow: hidden;
+}
+
+.stay {
 
 }
 
