@@ -132,4 +132,7 @@ figcaption {
     .about {
         height: 1000px;
     }
+    .logo-side {
+    max-width: 60px;
+}
 }

@@ -2,31 +2,107 @@
 <html lang="en-ca">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Michelle Holly Dugas</title>
+    <link href="css/component.css" rel="stylesheet" type="text/css"/>
+    <link href="css/images.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/404.css" rel="stylesheet">
-    <meta name="handheldfriendly" content="true">
-    <meta name="mobileoptimized" content="240">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/images.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
-<body>
-    
+	<body class="cbp-spmenu-push">
 
-    <nav role='navigation'>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <a href="#" id="nav-toggle"></a>
-    </nav>
- 
-    <section>
-    <img class="404" src="images/404-error.svg" alt="404 image">
-    </section>
+<!-- Navigation -->
+        
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+            <a href="index.html#work">WORK</a>
+			<a href="index.html#about">ABOUT</a>
+			<a href="index.html#contact">CONTACT</a>
+		</nav>
+
+			<div class="main">
+				<section class="buttonset">
+					<button id="showLeftPush"><img src="images/toggle-nav-button.svg" alt=""></button>
+				</section>
+			</div>
+            <div>
+                <section>
+                    <img class="logo-side" src="images/michelle-logo-small.svg" alt="">
+                </section>
+			</div>
+   
     
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>   
-<script src="js/main.js"></script> 
-<script src="js/404.js"></script> 
-</body>
+<!-- Portfolio Piece -->
+        <div>
+            <section>
+                <img class="404" src="images/404-error.svg" alt="404 image">
+            </section>
+    
+        </div>
+<!-- Footer --> 
+        <div>
+            <p class="footer">All rights reserved to Copyright © 2014 by Michelle Holly Dugas</p>
+        </div>
+          
+<!-- JS for Nav -->
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+		<script src="js/classie.js"></script>
+        <script src="js/toggle-nav.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+			function disableOther( button ) {
+				
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+
+			}
+		</script>
+        <script>
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+        </script>
+        <script>
+			(function() {
+				// initialize all
+				
+				[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
+					var svgicon = new svgIcon( el, svgIconConfig );
+				} );
+
+				new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger-cross' ), svgIconConfig, { easing : mina.elastic, speed: 600 } );
+
+			})();
+		</script>
+        
+<!-- JS for Slider -->
+
+	</body>
 </html>
