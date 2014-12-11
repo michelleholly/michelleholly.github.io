@@ -49,11 +49,7 @@ p {
     background: none;
     overflow: hidden;
     z-index: 9;
-    position: absolute;
-}
-
-.stay {
-
+    position: fixed;
 }
 
 .flex-img {
