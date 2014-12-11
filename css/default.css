@@ -44,10 +44,12 @@ p {
 
 .logo-side {
     margin: 15px;
-    float: right;
+    right: 0;
     max-width: 100px;
     background: none;
     overflow: hidden;
+    z-index: 9;
+    position: absolute;
 }
 
 .stay {
